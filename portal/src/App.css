@@ -1,38 +1,332 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+}
+
+.nav-principal {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+}
+
+.nav-principal-menu{
+  color: #eb0029;
+  font-size: 24px;
+  margin-top: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-principal-banorte {
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-principal-banorte img {
+  height: 75px;
+  margin: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-principal-buscador {
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 20px;
+  font-size: 24px;
+  color: #eb0029;
+}
+
+
+.slider-main {
+  background-color: #5b6670;
+}
+
+.slider {
+  width: 85%;
+  height: 350px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.slider ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  animation: cambio 40s infinite alternate linear;
+  height: 95%;
+  width: 400%;
+  padding-top: 15px;
+}
+
+.slider ul li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider ul li img {
+  height: 85%;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes cambio {
+  0% {margin-left: 0;}
+  20% {margin-left: 0;}
+  
+  25%{margin-left: -100%;}
+  45%{margin-left: -100%;}
+  
+  50%{margin-left: -200%}
+  70%{margin-left: -200%}
+  
+  75%{margin-left: -300%}
+  100%{margin-left: -300%}
+}
+
+main {
+  background-color:#eb0029;
+}
+
+.main-nav-2 {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 40% 60%;
+}
+
+.nav-2-bancolinea {
+  border-radius: 5px;
+  grid-column: 1;
+  grid-row: 1/2;
+  background-color: #fff;
+  width: 50%;
+  margin-left: 30px;
+  color: #eb0029;
+  padding: 10px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.nav-2-bancolinea form {
+  margin: 0 auto 15px;
+}
+
+.nav-2-bancolinea form button {
+  margin-top: 10px;
+  background-color: #eb0029;
+  color: #fff;
+  box-shadow: none;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+.nav-2-bancolinea form button:hover{
+  background-color: #5b6670;
+  color: #eb0029;
+}
+
+.nav-2-nav {
+  grid-column: 2;
+  grid-row: 1;
+  margin-top: 30px;
+}
+
+.main-nav-2 ul{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.main-nav-2 ul li {
+  text-align: center;
+  list-style: none;
+  font-size: 18px;
+}
+
+.main-nav-2 ul li i{
+  font-size: 24px;
+}
+
+.nav-2-eslogan {
+  grid-column: 2;
+  grid-row: 2;
+  text-align: center;
+  font-size: 60px;
+  color: #fff;
+}
+
+.main-adds {
+  margin: auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  justify-content: center;
+  text-align: center;
+  height: 500px;
+  column-gap: 20px;
+}
+
+.main-adds-maneja {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(./4.jpg);
+  background-attachment: scroll;
+  display: flex;
+  border-radius: 5px;
+}
+
+.main-adds-maneja p {
+  margin: auto;
+  align-items: center;
+  justify-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 24px;
+  width: 70%;
+}
+
+.main-adds-cambio{
+  display: grid;
+  grid-template-rows: 20% 60% 20%;
+  background-color: #fff;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.add-cambio-title {
+  margin-top: 30px;
+  background-color: #eb0029;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 24px;
+  height: auto;
+  height: 60px;
+  border-radius: 5px;
+}
+
+.add-cambio-monedas {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-row-gap: 10px;
+  align-content: center;
+  font-size: 24px;
+  grid-column-gap: 10px;
+}
+
+.add-cambio-vermas button {
+  margin-top: 30px;
+  background-color: #eb0029;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 24px;
+  height: auto;
+  height: 60px;
+  border-radius: 5px;
+  border: none;
+}
+
+.main-adds-patrimonio {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(./1.jpg);
+  background-attachment: scroll;
+  display: flex;
+  border-radius: 5px;
+}
+
+.main-adds-patrimonio p {
+  margin: auto;
+  align-items: center;
+  justify-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 24px;
+  width: 70%;
+}
+
+.aprende-banorte {
+  font-size: 50px;
+  text-align: center;
+  color: #fff;
+  margin: 30px 0;
+}
+
+.post {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  height: 400px;
+  margin: auto;
+  column-gap: 50px;
+  padding-bottom: 30px;
+}
+
+.post div {
+  background-color: black;
+}
+
+footer {
+  background-color: #5b6670;
+  padding: 40px 20px;
+  color: #fff;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-column {
+  width: 25%;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 5px;
+}
+
+.footer-column a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-column a:hover {
+  color: #fff;
+}
+
+.footer-column p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover{
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  text-decoration: none;
 }
