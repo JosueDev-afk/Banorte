@@ -1,4 +1,6 @@
-class formulario extends React.Component {
+import React from 'react';
+
+class Formulario extends React.Component {
     render() {
       return (
         <div>
@@ -8,4 +10,4 @@ class formulario extends React.Component {
     }
   }
   
-  export default formulario;
+  export default Formulario;
