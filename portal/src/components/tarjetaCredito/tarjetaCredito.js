@@ -12,7 +12,6 @@ import cuarenta from "./40.jpg";
 
 function TarjetaCredito() {
     const [mostrarTarjeta, setTarjeta] = useState(false);
-    const [mostrarApp, setApp] = useState(false);
     const handleClickTarjeta = () => {
         setTarjeta(!mostrarTarjeta);
     };

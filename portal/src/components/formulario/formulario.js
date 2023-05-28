@@ -2,11 +2,15 @@ import App from "../../App";
 import TarjetaCredito from "../TarjetaCredito/TarjetaCredito";
 import React, { useState } from "react";
 import './Formulario.css'
+import banorteLogo from "../../Banorte-logo.jpg";
 function Formulario() {
     const [mostrarHome, setHome] = useState(false);
 
     const handleClick = () => {
         setHome(!mostrarHome);
+    };
+    const handleClickInicio = () => {
+        window.open(App,'_self');
     };
     return (
         <React.Fragment>
@@ -14,6 +18,27 @@ function Formulario() {
             {!mostrarHome &&
                 <>
                     <div>
+                        <header>
+                            <div class="nav-principal">
+                                <div class="nav-principal-menu">
+                                    <i class="fa fa-navicon"></i>
+                                </div>
+                                <div class="nav-principal-banorte">
+                                    <img onClick={handleClickInicio} src={banorteLogo} alt=""></img>
+                                </div>
+                                <div class="nav-principal-buscador">
+                                    <div class="buscador">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                    <div class="location icon">
+                                        <span class="glyphicon">&#xe062;</span>
+                                    </div>
+                                    <div class="disability icon">
+                                        <i class="fa fa-wheelchair"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
                         <head>
                             <title>Formulario de Datos Personales</title>
                         </head>
@@ -136,12 +161,41 @@ function Formulario() {
                                 <button type="submit">Continuar</button>
                             </form>
                         </body>
+                        <footer>
+                            <div class="footer-container">
+                                <div class="footer-column">
+                                    <h3>Redes sociales</h3>
+                                    <ul>
+                                        <li><a href="#">Facebook</a></li>
+                                        <li><a href="#">Twitter</a></li>
+                                        <li><a href="#">Instagram</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-column">
+                                    <h3>Preguntas frecuentes</h3>
+                                    <ul>
+                                        <li><a href="#">¿Cómo puedo hacer una apertura?</a></li>
+                                        <li><a href="#">¿Cuál es la política apertura de cuenta?</a></li>
+                                        <li><a href="#">¿Cómo puedo realizar una transferencia?</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-column">
+                                    <h3>Cuentas</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit mauris eu diam lobortis, sed lobortis nulla vestibulum. Quisque ultrices blandit commodo. Ut suscipit, metus at elementum luctus, enim mi pulvinar leo, non eleifend nisl ipsum eget metus. Nulla id ex mi.</p>
+                                </div>
+                                <div class="footer-column">
+                                    <h3>Terminos legales</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit mauris eu diam lobortis, sed lobortis nulla vestibulum. Quisque ultrices blandit commodo. Ut suscipit, metus at elementum luctus, enim mi pulvinar leo, non eleifend nisl ipsum eget metus. Nulla id ex mi.</p>
+                                </div>
+                            </div>
+                        </footer>
                     </div>
+
                 </>
             }
             {mostrarHome && <TarjetaCredito />}
 
-        </React.Fragment>
+        </React.Fragment >
 
     );
 }
