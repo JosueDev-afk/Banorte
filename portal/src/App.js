@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import './App.css';
-import Formulario from './components/Formulario/Formulario'
 import TarjetaCredito from './components/TarjetaCredito/TarjetaCredito';
 import logoBanorte from "./Banorte-logo.jpg";
 import banortePortabilidad from "./01-Banorte-Portabilidad-Nomina.jpeg";
