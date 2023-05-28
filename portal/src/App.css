@@ -4,10 +4,13 @@
   box-sizing: border-box;
 }
 
+
 header {
   height: 80px;
   width: 100%;
 }
+
+
 
 .nav-principal {
   display: grid;
@@ -19,6 +22,7 @@ header {
   font-size: 24px;
   margin-top: 20px;
   text-align: center;
+
 }
 
 .nav-principal-banorte {
@@ -85,7 +89,8 @@ header {
 }
 
 main {
-  background-color:#eb0029;
+  
+ background-image: radial-gradient(circle, #eb0029,#eb0030 );
 }
 
 .main-nav-2 {
@@ -142,6 +147,11 @@ main {
   text-align: center;
   list-style: none;
   font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.main-nav-2 ul li:hover{
+  transform: translateY(-8px);
 }
 
 .main-nav-2 ul li i{
@@ -322,11 +332,104 @@ footer {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   cursor: pointer;
+  color: white !important;
+  
 }
 
 a:hover{
-  color: white;
+  color: #5b6670 !important;
   text-decoration: none;
+}
+iframe{
+  border:none
+}
+@media only screen and (max-width: 1250px){
+  .main-nav-2{
+      grid-template-columns: 40% 60%;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .main-nav-2 {
+      grid-template-rows: 40% 30% 30%;
+  }
+
+  .nav-2-eslogan {
+      grid-row: 3;
+      grid-column: 1/3;
+      margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .main-nav-2 {
+      grid-template-rows: 60% 20% 20%;
+      grid-template-columns: auto;
+  }
+
+  .nav-2-bancolinea{
+      grid-row: 1;
+  }
+
+  .nav-2-nav {
+      grid-row: 2;
+      grid-column: 1;
+  }
+
+  .nav-2-eslogan {
+      grid-row: 3;
+      grid-column: 1;
+      margin-top: 10px;
+  } 
+
+  .main-adds {
+      grid-template-columns: 90%;
+      grid-template-rows: 500px 500px 500px;
+      row-gap: 20px;
+      height: auto;
+  }
+
+  .main-adds-maneja{
+      grid-row: 1;
+      height: 500px;
+  }
+
+  .main-adds-cambio {
+      grid-row: 2;
+      height: 500px;
+      grid-template-rows: 20% 60% 20%;
+  }
+  .main-adds-patrimonio {
+      grid-row: 3;
+      height: 500px;
+  }
+
+  .post {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      gap: 20px;
+  }
+  
+  .footer-container {
+      display: grid;
+      grid-template-columns: 1;
+      width: 90%;
+      text-align: center;
+      font-size: 24px;
+      margin: auto;
+  }
+
+  .footer-column {
+      grid-column: 1;
+      width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 550px) {
+  .main-nav-2{
+      margin-bottom: 60px;
+  }
 }
