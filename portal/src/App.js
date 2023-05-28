@@ -7,6 +7,7 @@ import banortePromo from "./Banorte-Promo-Seleccion-mayo2023-slider-VF.jpg";
 import banorteTDC from "./Banorte-TDC-HotSale2023-slider.jpg";
 import banorteTN from "./02-Banorte-Tarjetas-Nomina.jpg";
 
+
 function App() {
   const [mostrarFormulario, setFormulario] = useState(false);
 
@@ -78,7 +79,7 @@ function App() {
                     <div class="bancolinea-qr">
                       <p>Escanea tu codigo QR <i class="fa fa-qrcode"></i></p>
                     </div>
-                    <div class="bancolinea-token">
+                    <div class="bancolinea-token ">
                       <p>Sincroniza Token <i class="fa fa-key"></i></p>
                     </div>
                   </div>
