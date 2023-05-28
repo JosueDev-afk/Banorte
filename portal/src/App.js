@@ -111,9 +111,10 @@ function App() {
                     </ul>
                   </div>
                   <div class="nav-2-eslogan">
-                    <p>Diseñamos soluciones de vida</p>
+                    <p></p>
                   </div>
                 </div>
+                <div class="subtitle">Diseñamos soluciones de vida</div>
                 <div class="main-adds">
                   <div class="main-adds-maneja">
                     <p>Maneja tu dinero integralmente</p>

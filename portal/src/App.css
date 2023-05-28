@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Gotham Light', Helvetica, Arial, sans-serif;
 }
 
 
@@ -95,18 +97,20 @@ main {
 
 .main-nav-2 {
   display: grid;
-  grid-template-columns: 30% 70%;
-  grid-template-rows: 40% 60%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  background-color: #fff;
+  margin-bottom: 30px;
 }
 
 .nav-2-bancolinea {
   border-radius: 5px;
   grid-column: 1;
   grid-row: 1/2;
-  background-color: #fff;
+  background-color: #d9d9d9;
   width: 50%;
   margin-left: 30px;
-  color: #eb0029;
+  color: #000;
   padding: 10px;
   margin: auto;
   margin-top: 30px;
@@ -148,14 +152,20 @@ main {
   list-style: none;
   font-size: 18px;
   transition: transform 0.3s ease;
+  color: #000;
 }
 
 .main-nav-2 ul li:hover{
   transform: translateY(-8px);
 }
 
+.main-nav-2 ul li p{
+  color: #000;
+}
+
 .main-nav-2 ul li i{
   font-size: 24px;
+  color: #000;
 }
 
 .nav-2-eslogan {
@@ -163,7 +173,7 @@ main {
   grid-row: 2;
   text-align: center;
   font-size: 60px;
-  color: #fff;
+  color: #000;
 }
 
 .main-adds {
@@ -339,11 +349,16 @@ a {
 }
 
 a:hover{
-  color: #5b6670 !important;
   text-decoration: none;
 }
 iframe{
   border:none
+}
+
+.subtitle {
+  text-align: center;
+  color: #fff;
+  font-size: 4em;
 }
 @media only screen and (max-width: 1250px){
   .main-nav-2{
@@ -360,6 +375,10 @@ iframe{
       grid-row: 3;
       grid-column: 1/3;
       margin-top: 10px;
+  }
+
+  .nav-2-bancolinea {
+    margin-bottom: 2.5em;
   }
 }
 
